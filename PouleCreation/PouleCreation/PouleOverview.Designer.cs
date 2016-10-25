@@ -50,6 +50,7 @@
             this.btAddJudoka.TabIndex = 1;
             this.btAddJudoka.Text = "Add Judoka";
             this.btAddJudoka.UseVisualStyleBackColor = true;
+            this.btAddJudoka.Click += new System.EventHandler(this.btAddJudoka_Click);
             // 
             // lblPouleName
             // 

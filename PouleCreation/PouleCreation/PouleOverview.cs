@@ -18,12 +18,24 @@ namespace PouleCreation
         {
             InitializeComponent();
             this.mainForm = mainForm;
+            this.currentPoule = currentPoule;
             lblPouleName.Text = currentPoule.getName();
         }
 
         private void btClose_Click(object sender, EventArgs e)
         {
             mainForm.closePouleOverview();
+        }
+
+        private void btAddJudoka_Click(object sender, EventArgs e)
+        {
+            CreateJudoka judoCreate = new CreateJudoka(this);
+            judoCreate.Show();
+        }
+
+        public Poule getCurrentPoule()
+        {
+            return currentPoule;
         }
     }
 }

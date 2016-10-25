@@ -11,11 +11,20 @@ namespace PouleCreation
         String name;
         String belt;
         int weight;
+        Poule poule;
         public Judoka(String name, String belt, int weight)
         {
             this.name = name;
             this.belt = belt;
             this.weight = weight;
+        }
+        
+        public Judoka(String name, String belt, int weight, Poule poule)
+        {
+            this.name = name;
+            this.belt = belt;
+            this.weight = weight;
+            this.poule = poule;
         }
 
         public String getName()
