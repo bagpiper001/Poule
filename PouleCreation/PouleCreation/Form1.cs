@@ -61,5 +61,11 @@ namespace PouleCreation
             pouleForm.Close();
             pouleForm = null;
         }
+
+        public void closePouleOverview()
+        {
+            pouleOverview.Close();
+            pouleOverview = null;
+        }
     }
 }

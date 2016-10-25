@@ -23,7 +23,7 @@ namespace PouleCreation
 
         private void btClose_Click(object sender, EventArgs e)
         {
-
+            mainForm.closePouleOverview();
         }
     }
 }
