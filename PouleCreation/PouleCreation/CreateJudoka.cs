@@ -27,6 +27,9 @@ namespace PouleCreation
             if(tbName.Text != null && tbWeight.Text != null && cbBelt.SelectedValue != null)
             {
                 Judoka newJudoka = new Judoka(tbName.Text, cbBelt.SelectedValue.ToString(), Convert.ToInt32(tbWeight.Text), currentPoule);
+            } else
+            {
+                MessageBox.Show("Please make sure all the fields are filled.");
             }
         }
     }
